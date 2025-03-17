@@ -33,7 +33,8 @@ Background = "#93DCE3"
 textcolor = "white"
 # Set window transparency (fixes blurry text issue)
 root.config(bg=Background)  # Background color to blend better
-root.attributes("-transparentcolor", Background)  # 0.0 = fully transparent, 1.0 = fully visible
+root.attributes("-transparentcolor", Background)
+#root.attributes("-alpha", 0.5)  # 0.0 = fully transparent, 1.0 = fully visible
 root.lower()
 root.attributes("-topmost", False)
 # Time Label (Black Font, Transparent Background)
